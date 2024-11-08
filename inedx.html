@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Finder</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bing Maps API -->
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?key=AiC1qVLXKpSFxhgf2KNCr7CA33PWQaysMCpSKRgcM4EUycexYS274b4qVKF7ApzK&callback=loadMapScenario" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Weather Now</h1>
+            <p>Explore new locations and get accurate weather updates.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-box" id="searchBoxContainer">
+            <input type="text" id="searchBox" placeholder="Search for a location...">
+        </div>
+
+        <div id="myMap" class="map"></div>
+
+        <div id="weatherInfo" class="weather-info">Weather info will be displayed here.</div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
